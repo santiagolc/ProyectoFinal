@@ -1,0 +1,100 @@
+span, div, h1, h2, h3, p{
+    border: 1px solid black;
+}
+
+*{
+    gap: 5px;
+}
+
+.grid-container{
+    display: grid;
+    
+}
+
+.nav{
+    display: grid;
+    grid-template-areas: 
+    'portfolio . menu';
+}
+
+.portfolio{
+    grid-area: portfolio;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.titulos{
+    display: grid;
+    grid-template-areas: 
+    'izquierda1 derecha'
+    'izquierda2 derecha'
+    'izquierda3 derecha';
+}
+
+.nombre{
+    grid-area: izquierda1;
+}
+.tituloPrincipal {
+    grid-area: izquierda2;
+}
+.desarrollador{
+    grid-area: izquierda3;
+}
+
+.algo{
+    grid-area: derecha;
+}
+
+.organizador{
+    display: grid;
+    grid-template-areas: 
+    'izquierda derecha1'
+    'izquierda derecha2'
+    'izquierda derecha3';
+}
+
+.imagen{
+    grid-area: izquierda;
+    width: 400px;
+}
+
+.titulo{
+    grid-area: derecha1;
+}
+
+.subtitulo{
+    grid-area: derecha2;
+}
+
+.descripcion{
+    grid-area: derecha3;
+}
+
+.stack{
+    display: grid;
+    grid-template-areas: 
+    'stack stack stack stack stack'
+    ;
+}
+
+.works{
+    display: grid;
+    grid-template-areas: 
+    'work work work'
+    ;
+}
+
+.stack img, .work img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-container{
+    height: 200px;
+    width: 200px;
+}
+
+
+

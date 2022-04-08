@@ -1,0 +1,33 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header'
+    'about about about about'
+    'skills skills skills skills'
+    'footer footer footer footer';
+}
+
+header{
+    grid-area: header;
+    border: 1px solid black;
+}
+
+.about{
+    border: 1px solid black;
+    height: 200px;
+}
+
+.skills{
+    border: 1px solid black;
+    height: 200px;  
+}
+
+.work{
+    border: 1px solid black;
+    height: 200px;
+}
+
+footer{
+    border: 1px solid black;
+    height: 200px;
+}
