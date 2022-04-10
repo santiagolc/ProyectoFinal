@@ -1,33 +1,117 @@
+div, p{
+    border: 1px solid black;
+}
+
+*{
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .grid-container{
     display: grid;
+}
+
+nav{
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: 'portfolio menu';
+    height: max-content;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+
+.portfolio{
+    grid-area: portfolio;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.titulos{
+    height: 400px;
+    
+    display: grid;
     grid-template-areas: 
-    'header header header header'
-    'about about about about'
-    'skills skills skills skills'
-    'footer footer footer footer';
+    'izquierda1 derecha'
+    'izquierda2 derecha'
+    'izquierda3 derecha';
 }
 
-header{
-    grid-area: header;
-    border: 1px solid black;
+.nombre{
+    grid-area: izquierda1;
+    font-size: 30px;
+    margin-left: 20%;
+}
+.tituloPrincipal {
+    grid-area: izquierda2;
+    font-size: 50px;
+    margin-left: 20%;
+}
+.desarrollador{
+    grid-area: izquierda3;
+    font-size: 30px;
+    margin-left: 20%;
 }
 
-.about{
-    border: 1px solid black;
+.algo{
+    grid-area: derecha;
+}
+
+.organizador{
+    display: grid;
+    grid-template-areas: 
+    'izquierda derecha1'
+    'izquierda derecha2'
+    'izquierda derecha3';
+}
+
+.imagen{
+    grid-area: izquierda;
+    width: 400px;
+}
+
+.titulo{
+    grid-area: derecha1;
+}
+
+.subtitulo{
+    grid-area: derecha2;
+}
+
+.descripcion{
+    grid-area: derecha3;
+}
+
+.stack{
+    display: grid;
+    grid-template-areas: 
+    'stack stack stack stack stack'
+    ;
+}
+
+.works{
+    display: grid;
+    grid-template-areas: 
+    'work work work'
+    ;
+}
+
+.stack img, .work img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-container{
     height: 200px;
+    width: 200px;
 }
 
-.skills{
-    border: 1px solid black;
-    height: 200px;  
-}
 
-.work{
-    border: 1px solid black;
-    height: 200px;
-}
 
-footer{
-    border: 1px solid black;
-    height: 200px;
-}
